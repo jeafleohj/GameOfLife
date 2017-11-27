@@ -1,4 +1,4 @@
 # Game of Life
-Juego de la vida de Conway, implemetando en C++ y opengl.
+Implementation of Conway's Game of Life in 3D using c++ and opengl
 ## Screenshot
 ![](screenshot/game.png)
