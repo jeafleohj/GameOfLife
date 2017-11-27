@@ -51,7 +51,7 @@ void Window::display(){
 		glMatrixMode(GL_MODELVIEW_MATRIX);
 		glTranslatef(0, 0, -5);
 		glRotatef(alpha,2,-4,-1);
-		//alpha++;
+		alpha+=1;
 		//Debria estar el draw del cubo
 		mundo.drawWorld();
 		glfwSwapBuffers(ventana);

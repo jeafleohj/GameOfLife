@@ -6,7 +6,7 @@ World::World(int n)
 	:n(n)
 {
 	std::default_random_engine generator;
-	std::bernoulli_distribution dist(.5);
+	std::bernoulli_distribution dist(0.06);
 	//std::binomial_distribution<int> dist(20,.00001);
 	//std::poisson_distribution<int> dist(.0004);
 
@@ -48,13 +48,13 @@ void World::drawWorld(){
 			}
 		}
 	}
-	std::this_thread::sleep_for(std::chrono::milliseconds(100));
+//	std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	for(int i=0;i<n;i++){
 		for(int j=0;j<n;j++){
 			for(int z=0;z<n;z++){
 				int vecinos=0;
 				for(int k=0;k<26;k++){
-					if( (0<i+py[k] && i+py[k]<n) && (0<j+px[k] && j+px[k]<n )&& (0<z+pz[k] && z+pz[k]<n )&& p[i+py[k]][j+px[k]][z+pz[k]]->getLife() ){
+					if( (0<=i+py[k] && i+py[k]<n) && (0<=j+px[k] && j+px[k]<n )&& (0<=z+pz[k] && z+pz[k]<n )&& p[i+py[k]][j+px[k]][z+pz[k]]->getLife() ){
 						vecinos++;
 					}
 				}

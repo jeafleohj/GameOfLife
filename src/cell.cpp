@@ -16,13 +16,13 @@ void Cell::setLife(bool b){life=b;}
 void Cell::updateState(){
 	switch(life){
 		case true:
-			if(neighbours!=3&&neighbours!=4){
+			if(neighbours>5 || neighbours<2){
 				life=false;
 			}
 			//life=false;
 			break;
 		case false:
-			if(neighbours==4) life=true;
+			if(neighbours<8 && neighbours>6) life=true;
 			break;
 	}
 }
