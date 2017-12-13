@@ -48,7 +48,7 @@ void World::drawWorld(){
 			}
 		}
 	}
-//	std::this_thread::sleep_for(std::chrono::milliseconds(100));
+//	std::this_thread::sleep_for(std::chrono::milliseconds(200));
 	for(int i=0;i<n;i++){
 		for(int j=0;j<n;j++){
 			for(int z=0;z<n;z++){

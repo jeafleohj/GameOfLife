@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 bool Cube::checkCube(Point<GLfloat> _p[8]){
-	
+	return false;
 }
 Cube::Cube(){
 	//Something

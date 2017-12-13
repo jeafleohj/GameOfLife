@@ -4,9 +4,9 @@
 #include "cube.h"
 class Cell{
  private:
+	Cube c;
 	bool life;
 	int neighbours;
-	Cube c;
 
  public:
 	Cell();
