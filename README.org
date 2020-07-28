@@ -1,0 +1,13 @@
+#+TITLE: Game of life
+
+* Description
+Implementation of Conway's Game of Life in 3D using C++ and OpenGL
+[[./screenshot/game.png]]
+* Dependencies
+- glew
+- glfw
+* Execution
+- Build image :: ~./app.sh build~
+- Run container :: ~./app.sh run~
+- Execution :: ~docker -it gol sh~
+  - Inside de container: ~make && bin/gol3d~
