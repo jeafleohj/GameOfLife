@@ -1,0 +1,6 @@
+.clangd
+bin
+compile_commands.json
+test
+\#*
+build
