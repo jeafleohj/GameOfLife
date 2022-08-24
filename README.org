@@ -6,6 +6,10 @@ Implementation of Conway's Game of Life in 3D using C++ and OpenGL
 * Dependencies
 - glew
 - glfw
+#+begin_src js
+const l=1;
+console.log(l);
+#+end_src
 * Execution
 - Build image :: ~./app.sh build~
 - Run container :: ~./app.sh run~
